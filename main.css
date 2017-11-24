@@ -1,0 +1,37 @@
+body {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.highlight-color {
+    color: rgb(255, 145, 0);
+}
+
+.big-font {
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+}

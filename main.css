@@ -1,37 +1,128 @@
+html {
+    height: 100%;
+}
+
 body {
     color: black;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('assets/background_neoreeds_1920x1080.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
 }
 
 .content {
+    align-self: flex-start;
     max-width: 800px;
     text-align: center;
+    padding: 10px;
 }
 
 .header {
-    margin-bottom: 40px;
-}
-
-.title {
-    font-size: 16px;
+    background: url('assets/logo_neoreeds_with_text_big.png') no-repeat center center;
+    height: 105px;
+    margin: 20px 0 60px;
 }
 
 .description {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .highlight-color {
-    color: rgb(255, 145, 0);
+    color: #f4524e;
 }
 
 .big-font {
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 p {
     margin: 0;
+}
+
+.chat-icon {
+    background: url('assets/chat_icone_big.png') no-repeat center center;
+    height: 74px;
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    /* hi-res laptops and desktops */
+    /* medium size : 1024x768 */
+    body {
+        background: url('assets/background_neoreeds_1024x640.jpg') no-repeat;
+    }
+    .header {
+        background: url('assets/logo_neoreeds_with_text_medium.png') no-repeat center center;
+        height: 75px;
+    }
+    .chat-icon {
+        background: url('assets/chat_icone_medium.png') no-repeat center center;
+        height: 53px;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */
+    /* hi-res laptops and desktops */
+    /* big size : 1440x900 */
+    body {
+        background: url('assets/background_neoreeds_1440x900.jpg') no-repeat;
+    }
+    .header {
+        background: url('assets/logo_neoreeds_with_text_big.png') no-repeat center center;
+        height: 105px;
+    }
+    .chat-icon {
+        background: url('assets/chat_icone_big.png') no-repeat center center;
+        height: 74px;
+    }
+}
+
+@media (min-width:1441px) {
+    /* hi-res laptops and desktops */
+    /* big size : 1920x1080*/
+    body {
+        background: url('assets/background_neoreeds_1920x1080.jpg') no-repeat;
+    }
+}
+
+
+/* RETINA */
+
+@media (min-width:1025px) and (min-device-pixel-ratio: 2) {
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */
+    /* hi-res laptops and desktops */
+    /* big size */
+    body {
+        background: url('assets/retina/background_neoreeds_1440x900@x2.jpg') no-repeat;
+    }
+    .header {
+        background: url('assets/retina/logo_neoreeds_with_text_big@x2.png') no-repeat center center;
+        height: 211px;
+    }
+    .chat-icon {
+        background: url('assets/retina/chat_icone_big@x2.png') no-repeat center center;
+        height: 148px;
+    }
 }

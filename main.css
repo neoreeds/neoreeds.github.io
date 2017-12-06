@@ -3,10 +3,8 @@ html {
 }
 
 body {
-    line-height: 1.6em;
+    line-height: 1.3em;
     display: flex;
-    /* justify-content: center;
-    align-items: center;*/
     background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -17,8 +15,6 @@ body {
 
 .content {
     align-self: flex-start;
-    /*max-width: 800px;*/
-    /* text-align: center;*/
     padding: 0;
 }
 
@@ -30,20 +26,11 @@ body {
     text-align: left;
 }
 
-.actions-icons {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    height: 66px;
-    display: table;
-    border-spacing: 10px;
-}
-
 .description {
-    margin-bottom: 60px;
+    margin: 50px 0 60px 300px;
+    /*  margin-bottom: 60px;
     margin-left: 300px;
-    /*FIXME adjust*/
-    width: 800px;
+    width: 800px;*/
     text-align: left;
 }
 
@@ -72,25 +59,31 @@ p {
     padding: 17px;
 }
 
-.linkedin-icon {
-    background: url('assets/1920x1200/icone_linkedin_big.png') no-repeat center center;
+.actions-icons {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 66px;
+    display: table;
+    border-spacing: 10px 0;
+}
+
+.actions-icon-item {
     height: 50px;
     width: 50px;
     display: table-cell;
+}
+
+.linkedin-icon {
+    background: url('assets/1920x1200/icone_linkedin_big.png') no-repeat bottom center;
 }
 
 .facebook-icon {
-    background: url('assets/1920x1200/icone_facebook_big.png') no-repeat center center;
-    height: 50px;
-    width: 50px;
-    display: table-cell;
+    background: url('assets/1920x1200/icone_facebook_big.png') no-repeat bottom center;
 }
 
 .twitter-icon {
-    background: url('assets/1920x1200/icone_twitter_big.png') no-repeat center center;
-    height: 50px;
-    width: 50px;
-    display: table-cell;
+    background: url('assets/1920x1200/icone_twitter_big.png') no-repeat bottom center;
 }
 
 @media (min-width:320px) {
@@ -120,24 +113,21 @@ p {
     .actions-icons {
         height: 43px;
     }
-    .linkedin-icon {
-        background: url('assets/1024x768/icone_linkedin_small.png') no-repeat center center;
+    .actions-icon-item {
         height: 32px;
         width: 32px;
+    }
+    .linkedin-icon {
+        background: url('assets/1024x768/icone_linkedin_small.png') no-repeat bottom center;
     }
     .facebook-icon {
-        background: url('assets/1024x768/icone_facebook_small.png') no-repeat center center;
-        height: 32px;
-        width: 32px;
+        background: url('assets/1024x768/icone_facebook_small.png') no-repeat bottom center;
     }
     .twitter-icon {
-        background: url('assets/1024x768/icone_twitter_small.png') no-repeat center center;
-        height: 32px;
-        width: 32px;
+        background: url('assets/1024x768/icone_twitter_small.png') no-repeat bottom center;
     }
     .description {
         margin-left: 400px;
-        /*FIXME adjust*/
         width: 600px;
     }
 }
@@ -148,11 +138,35 @@ p {
     /* hi-res laptops and desktops */
     /* big size : 1440x900 */
     body {
-        background: url('assets/background_neoreeds_1440x900.jpg') no-repeat;
+        background: url('assets/1440x900/background_1440x900.jpg') no-repeat;
+        font-size: 16px;
     }
     .header {
-        background: url('assets/logo_neoreeds_with_text_big.png') no-repeat center center;
-        height: 105px;
+        background: url('assets/1440x900/logo_neoreeds_medium.png') no-repeat center center;
+        height: 50px;
+        width: 386px;
+    }
+    .actions-icons {
+        height: 50px;
+        border-spacing: 0;
+    }
+    .actions-icon-item {
+        height: 50px;
+        width: 50px;
+    }
+    .linkedin-icon {
+        background: url('assets/1440x900/icone_linkedin_medium.png') no-repeat bottom center;
+    }
+    .facebook-icon {
+        background: url('assets/1440x900/icone_facebook_medium.png') no-repeat bottom center;
+    }
+    .twitter-icon {
+        background: url('assets/1440x900/icone_twitter_medium.png') no-repeat bottom center;
+    }
+    .description {
+        margin-top: 100px;
+        margin-left: 540px;
+        width: 700px;
     }
 }
 
@@ -161,6 +175,34 @@ p {
     /* big size : 1920x1080*/
     body {
         background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
+        font-size: 18px;
+    }
+    .header {
+        background: url('assets/1920x1200/logo_neoreeds_big.png') no-repeat center center;
+        height: 66px;
+        width: 515px;
+    }
+    .actions-icons {
+        height: 66px;
+        border-spacing: 0;
+    }
+    .actions-icon-item {
+        height: 66px;
+        width: 60px;
+    }
+    .linkedin-icon {
+        background: url('assets/1920x1200/icone_linkedin_big.png') no-repeat bottom center;
+    }
+    .facebook-icon {
+        background: url('assets/1920x1200/icone_facebook_big.png') no-repeat bottom center;
+    }
+    .twitter-icon {
+        background: url('assets/1920x1200/icone_twitter_big.png') no-repeat bottom center;
+    }
+    .description {
+        margin-top: 100px;
+        margin-left: 750px;
+        width: 750px;
     }
 }
 

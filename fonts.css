@@ -1,6 +1,6 @@
 body {
     color: black;
-    font-size: 0.8em;
+    font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
@@ -13,8 +13,12 @@ body {
     font-size: 0.7em;
 }
 
+.normal-font {
+    font-size: 0.9em;
+}
+
 .big-font {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 300;
 }
 

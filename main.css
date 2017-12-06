@@ -3,15 +3,11 @@ html {
 }
 
 body {
-    color: black;
-    font-size: 1em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
     line-height: 1.6em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('assets/background_neoreeds_1920x1080.jpg') no-repeat;
+    /* justify-content: center;
+    align-items: center;*/
+    background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 100%;
@@ -21,41 +17,82 @@ body {
 
 .content {
     align-self: flex-start;
-    max-width: 800px;
-    text-align: center;
-    padding: 10px;
+    /*max-width: 800px;*/
+    /* text-align: center;*/
+    padding: 0;
 }
 
 .header {
-    background: url('assets/logo_neoreeds_with_text_big.png') no-repeat center center;
-    height: 105px;
-    margin: 20px 0 60px;
+    background: url('assets/1920x1200/logo_neoreeds_big.png') no-repeat center center;
+    height: 66px;
+    width: 515px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.actions-icons {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 66px;
+    width: 170px;
 }
 
 .description {
     margin-bottom: 60px;
-}
-
-.highlight-color {
-    color: #f4524e;
-}
-
-.big-font {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-.medium-font {
-    font-weight: 500;
+    margin-left: 300px;
+    /*FIXME adjust*/
+    width: 800px;
+    text-align: left;
 }
 
 p {
-    margin: 0;
+    margin: 10px 0;
+}
+
+.highlight-block-container {
+    display: table;
+    border-spacing: 20px;
+    table-layout: fixed;
+}
+
+.highlight-block {
+    border: 1px solid #f4524e;
+    border-radius: 50%;
+    color: #f4524e;
+    width: 25%;
+    /* width: 180px;
+    height: 220px;*/
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 5px;
 }
 
 .chat-icon {
     background: url('assets/chat_icone_big.png') no-repeat center center;
     height: 74px;
+}
+
+.linkedin-icon {
+    background: url('assets/1920x1200/icone_linkedin_big.png') no-repeat center center;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.facebook-icon {
+    background: url('assets/1920x1200/icone_facebook_big.png') no-repeat center center;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.twitter-icon {
+    background: url('assets/1920x1200/icone_twitter_big.png') no-repeat center center;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
 }
 
 @media (min-width:320px) {
@@ -109,7 +146,7 @@ p {
     /* hi-res laptops and desktops */
     /* big size : 1920x1080*/
     body {
-        background: url('assets/background_neoreeds_1920x1200.jpg') no-repeat;
+        background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
     }
 }
 

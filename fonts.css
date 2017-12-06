@@ -1,0 +1,27 @@
+body {
+    color: black;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.highlight-color {
+    color: #f4524e;
+}
+
+.small-font {
+    font-size: 0.8em;
+}
+
+.big-font {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.medium-font {
+    font-weight: 500;
+}
+
+.bold-font {
+    font-weight: 700;
+}

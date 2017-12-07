@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    line-height: 1.3em;
     display: flex;
     background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
     background-size: cover;
@@ -16,6 +15,7 @@ body {
 .content {
     align-self: flex-start;
     padding: 0;
+    width: 100%;
 }
 
 .header {
@@ -27,42 +27,39 @@ body {
 }
 
 .description {
-    margin: 50px 0 60px 300px;
-    /*  margin-bottom: 60px;
-    margin-left: 300px;
-    width: 800px;*/
+    margin: 10vh 6vw 5vh 40vw;
     text-align: left;
 }
 
 p {
-    margin: 10px 0;
+    margin: 1.5vh 0;
 }
 
 .highlight-block-container {
     display: table;
-    border-spacing: 20px;
+    border-spacing: 2.2vw 0;
     table-layout: fixed;
+    height: 15vh;
+    width: 100%;
 }
 
 .highlight-block {
     border: 1px solid #f4524e;
     border-radius: 50%;
     font-size: 0.8em;
-    line-height: 1.4em;
+    line-height: 1.2em;
     color: #f4524e;
-    width: 25%;
-    /* width: 180px;
-    height: 220px;*/
+    min-width: 25%;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
-    padding: 17px;
+    padding: 1vh 1vw;
 }
 
 .actions-icons {
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 20px;
     height: 66px;
     display: table;
     border-spacing: 10px 0;
@@ -126,10 +123,6 @@ p {
     .twitter-icon {
         background: url('assets/1024x768/icone_twitter_small.png') no-repeat bottom center;
     }
-    .description {
-        margin-left: 400px;
-        width: 600px;
-    }
 }
 
 @media (min-width:1025px) {
@@ -139,7 +132,6 @@ p {
     /* big size : 1440x900 */
     body {
         background: url('assets/1440x900/background_1440x900.jpg') no-repeat;
-        font-size: 16px;
     }
     .header {
         background: url('assets/1440x900/logo_neoreeds_medium.png') no-repeat center center;
@@ -163,11 +155,6 @@ p {
     .twitter-icon {
         background: url('assets/1440x900/icone_twitter_medium.png') no-repeat bottom center;
     }
-    .description {
-        margin-top: 100px;
-        margin-left: 540px;
-        width: 700px;
-    }
 }
 
 @media (min-width:1441px) {
@@ -175,7 +162,7 @@ p {
     /* big size : 1920x1080*/
     body {
         background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
-        font-size: 18px;
+        /* font-size: 18px;*/
     }
     .header {
         background: url('assets/1920x1200/logo_neoreeds_big.png') no-repeat center center;
@@ -198,11 +185,6 @@ p {
     }
     .twitter-icon {
         background: url('assets/1920x1200/icone_twitter_big.png') no-repeat bottom center;
-    }
-    .description {
-        margin-top: 100px;
-        margin-left: 750px;
-        width: 750px;
     }
 }
 

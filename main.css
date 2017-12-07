@@ -85,6 +85,76 @@ p {
 
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
+    body {
+        background: url('assets/mobile/background_mobile.svg') no-repeat top left;
+        background-size: auto 100vh;
+        width: 100%;
+    }
+    .description {
+        margin: 10vh 0 5vh 0;
+        text-align: center;
+    }
+    .title {
+        height: 26vh;
+        line-height: 5vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+    .summary {
+        height: 52vh;
+        line-height: 4vh;
+        font-size: 1.7vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+    .header {
+        background: url('assets/mobile/logo-neoreeds.png') no-repeat center center;
+        height: 29px;
+        width: 230px;
+    }
+    .actions-icons {
+        height: 29px;
+    }
+    .actions-icon-item {
+        height: 23px;
+        width: 23px;
+    }
+    .linkedin-icon {
+        background: url('assets/mobile/icon-linkedin23x23.png') no-repeat bottom center;
+    }
+    .facebook-icon {
+        background: url('assets/mobile/icon-facebook23x23.png') no-repeat bottom center;
+    }
+    .twitter-icon {
+        background: url('assets/mobile/icon-twitter-23x23.png') no-repeat bottom center;
+    }
+    .highlight-block-container {
+        display: block;
+        height: 80vh;
+    }
+    .highlight-block {
+        font-size: 2vh;
+        line-height: 3.5vh;
+        display: block;
+        height: 8vh;
+        border: none;
+        border-radius: 0;
+        background: #FA7973;
+        color: #fff;
+        padding: 6vh;
+    }
+    .highlight-block:nth-of-type(odd) {
+        background: #F4524F;
+    }
+    .contact-text {
+        background: url('assets/mobile/background_mobile-flou.svg') no-repeat bottom center;
+        background-size: auto 100vh;
+        height: 60vh;
+        padding: 10vh 10vw;
+        line-height: 4vh;
+        font-size: 2vh;
+        text-align: left;
+    }
 }
 
 @media (min-width:481px) {
@@ -203,7 +273,7 @@ p {
         background: url('assets/1440x900retina/icone_linkedin_medium@x2.png') no-repeat bottom center;
     }
     .facebook-icon {
-        background: url('assets/1440x900retina/icone_facebook_medium@x2.png') no-repeat bottom center;
+        background: url('assets/1440x900retina/icon_facebook_medium@x2.png') no-repeat bottom center;
     }
     .twitter-icon {
         background: url('assets/1440x900retina/icone_twitter_medium@x2.png') no-repeat bottom center;

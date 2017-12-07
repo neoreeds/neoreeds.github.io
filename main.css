@@ -4,10 +4,10 @@ html {
 
 body {
     display: flex;
-    background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
-    background-size: cover;
+    background: url('assets/background.svg') no-repeat;
     background-position: bottom center;
     height: 100%;
+    width: 100%;
     margin: 0;
     overflow: auto;
 }
@@ -99,9 +99,6 @@ p {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     /* hi-res laptops and desktops */
     /* medium size : 1024x768 */
-    body {
-        background: url('assets/1024x768/background_1024x768.jpg') no-repeat;
-    }
     .header {
         background: url('assets/1024x768/logo_neoreeds_small.png') no-repeat center center;
         height: 43px;
@@ -130,9 +127,6 @@ p {
     /* hi-res laptops and desktops */
     /* hi-res laptops and desktops */
     /* big size : 1440x900 */
-    body {
-        background: url('assets/1440x900/background_1440x900.jpg') no-repeat;
-    }
     .header {
         background: url('assets/1440x900/logo_neoreeds_medium.png') no-repeat center center;
         height: 50px;
@@ -160,10 +154,6 @@ p {
 @media (min-width:1441px) {
     /* hi-res laptops and desktops */
     /* big size : 1920x1080*/
-    body {
-        background: url('assets/1920x1200/background_1920x1200.jpg') no-repeat;
-        /* font-size: 18px;*/
-    }
     .header {
         background: url('assets/1920x1200/logo_neoreeds_big.png') no-repeat center center;
         height: 66px;
@@ -196,15 +186,26 @@ p {
     /* hi-res laptops and desktops */
     /* hi-res laptops and desktops */
     /* big size */
-    body {
-        background: url('assets/retina/background_neoreeds_1440x900@x2.jpg') no-repeat;
-    }
     .header {
-        background: url('assets/retina/logo_neoreeds_with_text_big@x2.png') no-repeat center center;
-        height: 211px;
+        background: url('assets/1440x900retina/logo_neoreeds_medium@x2.png') no-repeat center center;
+        height: 50px;
+        width: 386px;
     }
-    .chat-icon {
-        background: url('assets/retina/chat_icone_big@x2.png') no-repeat center center;
-        height: 148px;
+    .actions-icons {
+        height: 50px;
+        border-spacing: 0;
+    }
+    .actions-icon-item {
+        height: 50px;
+        width: 50px;
+    }
+    .linkedin-icon {
+        background: url('assets/1440x900retina/icone_linkedin_medium@x2.png') no-repeat bottom center;
+    }
+    .facebook-icon {
+        background: url('assets/1440x900retina/icone_facebook_medium@x2.png') no-repeat bottom center;
+    }
+    .twitter-icon {
+        background: url('assets/1440x900retina/icone_twitter_medium@x2.png') no-repeat bottom center;
     }
 }

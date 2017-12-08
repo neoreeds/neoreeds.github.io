@@ -22,7 +22,7 @@ body {
     background: url('assets/1920x1200/logo_neoreeds_big.png') no-repeat center center;
     height: 66px;
     width: 515px;
-    margin: 20px 0;
+    margin: 2vh 0;
     text-align: left;
 }
 
@@ -58,17 +58,22 @@ p {
 
 .actions-icons {
     position: absolute;
-    top: 20px;
+    top: 2vh;
     right: 20px;
     height: 66px;
     display: table;
     border-spacing: 10px 0;
 }
 
-.actions-icon-item {
+.actions-icons a {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.actions-icon-item,
+.actions-icon-item a {
     height: 50px;
     width: 50px;
-    display: table-cell;
 }
 
 .linkedin-icon {
@@ -83,7 +88,7 @@ p {
     background: url('assets/1920x1200/icone_twitter_big.png') no-repeat bottom center;
 }
 
-@media (min-width:320px) {
+@media (min-width:320px) and (max-width:960px) {
     /* smartphones, iPhone, portrait 480x320 phones */
     body {
         background: url('assets/mobile/background_mobile.svg') no-repeat top left;
@@ -91,21 +96,20 @@ p {
         width: 100%;
     }
     .description {
-        margin: 10vh 0 5vh 0;
+        margin: 10vh 0 0;
         text-align: center;
     }
     .title {
-        height: 26vh;
+        height: 27.5vh;
         line-height: 5vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
+        margin: 0 10vw;
+        font-size: 3vh;
     }
     .summary {
-        height: 52vh;
+        height: 54.7vh;
         line-height: 4vh;
-        font-size: 1.7vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
+        font-size: 2.2vh;
+        margin: 0 10vw;
     }
     .header {
         background: url('assets/mobile/logo-neoreeds.png') no-repeat center center;
@@ -114,8 +118,11 @@ p {
     }
     .actions-icons {
         height: 29px;
+        right: 10px;
+        border-spacing: 5px 0;
     }
-    .actions-icon-item {
+    .actions-icon-item,
+    .actions-icon-item a {
         height: 23px;
         width: 23px;
     }
@@ -129,19 +136,22 @@ p {
         background: url('assets/mobile/icon-twitter-23x23.png') no-repeat bottom center;
     }
     .highlight-block-container {
-        display: block;
-        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 1.3vh;
     }
     .highlight-block {
-        font-size: 2vh;
+        font-size: 2.2vh;
         line-height: 3.5vh;
-        display: block;
-        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        height: 19vh;
         border: none;
         border-radius: 0;
         background: #FA7973;
         color: #fff;
-        padding: 6vh;
+        padding: 6vh 7vw 0;
     }
     .highlight-block:nth-of-type(odd) {
         background: #F4524F;
@@ -152,13 +162,21 @@ p {
         height: 60vh;
         padding: 10vh 10vw;
         line-height: 4vh;
-        font-size: 2vh;
+        font-size: 2.2vh;
         text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
-@media (min-width:481px) {
+@media (min-width:481px) and (max-width:960px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    body {
+        background-size: 100vw 100vh;
+    }
+    .contact-text {
+        background-size: 100vw 100vh;
+    }
 }
 
 @media (min-width:641px) {
@@ -177,7 +195,8 @@ p {
     .actions-icons {
         height: 43px;
     }
-    .actions-icon-item {
+    .actions-icon-item,
+    .actions-icon-item a {
         height: 32px;
         width: 32px;
     }
@@ -206,7 +225,8 @@ p {
         height: 50px;
         border-spacing: 0;
     }
-    .actions-icon-item {
+    .actions-icon-item,
+    .actions-icon-item a {
         height: 50px;
         width: 50px;
     }
@@ -233,7 +253,8 @@ p {
         height: 66px;
         border-spacing: 0;
     }
-    .actions-icon-item {
+    .actions-icon-item,
+    .actions-icon-item a {
         height: 66px;
         width: 60px;
     }
@@ -265,7 +286,8 @@ p {
         height: 50px;
         border-spacing: 0;
     }
-    .actions-icon-item {
+    .actions-icon-item,
+    .actions-icon-item a {
         height: 50px;
         width: 50px;
     }

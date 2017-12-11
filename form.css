@@ -1,24 +1,31 @@
-.mailchimp-form input {
+#mc_embed_signup form {
+    text-align: left;
+}
+
+.mailchimp-form input,
+#mc_embed_signup input.email {
     border: 1px solid #f4524e;
     background: #ddd9da;
     color: #808080;
     font-size: 1.5vh;
     font-weight: 300;
-    line-height: 2.5vh;
-    padding: 0.6vh 0.5vw;
+    line-height: 4vh;
+    padding: 0 0.5vw;
+    width: 10vw;
+    margin: 0;
 }
 
-.mailchimp-form input[type="submit"] {
+#mc_embed_signup .button {
     border: 1px solid #adce6d;
     background: #adce6d;
     color: #444444;
     font-size: 1.5vh;
     font-weight: 500;
-    line-height: 2.5vh;
-    padding: 0.6vh 1vw;
+    line-height: 4vh;
+    border-radius: 0;
 }
 
-.mailchimp-form input[type="submit"]:hover {
+#mc_embed_signup .button:hover {
     border: 1px solid #8db94a;
     background: #8db94a;
 }
@@ -30,4 +37,21 @@
 
 .mc-submit {
     display: inline-block;
+    margin: 1vh 1vw 1vh 0;
+}
+
+#mc_embed_signup input.mce_inline_error {
+    border: 1px solid #f4524e!important;
+    background: #ddd9da;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    color: #f4524e!important;
+    font-size: 1.5vh!important;
+    font-weight: 500!important;
+    line-height: 2.5vh!important;
+    display: block;
+    position: absolute;
+    margin-top: 1vh!important;
+    width: 10vw;
 }

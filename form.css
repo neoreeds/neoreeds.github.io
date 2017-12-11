@@ -23,6 +23,8 @@
     font-weight: 500;
     line-height: 4vh;
     border-radius: 0;
+    box-sizing: content-box;
+    cursor: pointer;
 }
 
 #mc_embed_signup .button:hover {
@@ -47,6 +49,7 @@
 
 #mc_embed_signup div.mce_inline_error {
     color: #f4524e!important;
+    background: #444444!important;
     font-size: 1.5vh!important;
     font-weight: 500!important;
     line-height: 2.5vh!important;
@@ -54,4 +57,47 @@
     position: absolute;
     margin-top: 1vh!important;
     width: 10vw;
+}
+
+a,
+a:visited {
+    color: #f4524e;
+}
+
+#mce-error-response {
+    color: #f4524e!important;
+    background: #444444!important;
+    padding: 1vh 1vw;
+}
+
+#mce-success-response {
+    color: white;
+    background: #444444;
+    padding: 1vh 1vw;
+}
+
+@media (min-width: 0px) and (max-width:768px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #mc_embed_signup form {
+        text-align: center;
+    }
+    .mailchimp-form input,
+    #mc_embed_signup input.email {
+        width: 80%;
+    }
+    .mc-field-group {
+        display: block;
+        margin: 1vh 0 1vh 0;
+        width: 100%;
+    }
+    .mc-submit {
+        display: block;
+        margin: 1vh 0 1vh 0;
+        width: 100%;
+    }
+    #mc_embed_signup div.mce_inline_error {
+        display: block;
+        width: auto;
+        left: 17%;
+    }
 }

@@ -6,6 +6,7 @@ body {
     display: flex;
     background: url('assets/background.svg') no-repeat;
     background-position: bottom center;
+    background-size: cover;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -88,11 +89,11 @@ p {
     background: url('assets/1920x1200/icone_twitter_big.png') no-repeat bottom center;
 }
 
-@media (min-width:320px) and (max-width:960px) {
+@media (min-width: 0px) and (max-width:768px) {
     /* smartphones, iPhone, portrait 480x320 phones */
     body {
         background: url('assets/mobile/background_mobile.svg') no-repeat top left;
-        background-size: auto 100vh;
+        background-size: cover;
         width: 100%;
     }
     .description {
@@ -106,7 +107,7 @@ p {
         font-size: 3vh;
     }
     .summary {
-        height: 54.7vh;
+        height: 49.7vh;
         line-height: 4vh;
         font-size: 2.2vh;
         margin: 0 10vw;
@@ -144,8 +145,6 @@ p {
     .highlight-block {
         font-size: 2.2vh;
         line-height: 3.5vh;
-        display: flex;
-        flex-direction: column;
         height: 19vh;
         border: none;
         border-radius: 0;
@@ -158,7 +157,7 @@ p {
     }
     .contact-text {
         background: url('assets/mobile/background_mobile-flou.svg') no-repeat bottom center;
-        background-size: auto 100vh;
+        background-size: cover;
         height: 60vh;
         padding: 10vh 10vw;
         line-height: 4vh;
@@ -167,11 +166,22 @@ p {
         margin-top: 0;
         margin-bottom: 0;
     }
+    .arrow-bottom {
+        background: url('assets/mobile/fleche-bas.svg') no-repeat bottom center;
+        background-size: 5vh 5vh;
+        height: 5vh;
+        width: 10vw;
+        margin: 0 45vw;
+    }
 }
 
+
+/*
 @media (min-width:481px) and (max-width:960px) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    body {
+
+
+/* body {
         background-size: 100vw 100vh;
     }
     .contact-text {
@@ -179,11 +189,13 @@ p {
     }
 }
 
-@media (min-width:641px) {
+@media (min-width:481px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
 
-@media (min-width:961px) {
+
+/*}*/
+
+@media (min-width:768px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     /* hi-res laptops and desktops */
     /* medium size : 1024x768 */

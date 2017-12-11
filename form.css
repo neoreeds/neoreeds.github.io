@@ -1,0 +1,33 @@
+.mailchimp-form input {
+    border: 1px solid #f4524e;
+    background: #ddd9da;
+    color: #808080;
+    font-size: 1.5vh;
+    font-weight: 300;
+    line-height: 2.5vh;
+    padding: 0.6vh 0.5vw;
+}
+
+.mailchimp-form input[type="submit"] {
+    border: 1px solid #adce6d;
+    background: #adce6d;
+    color: #444444;
+    font-size: 1.5vh;
+    font-weight: 500;
+    line-height: 2.5vh;
+    padding: 0.6vh 1vw;
+}
+
+.mailchimp-form input[type="submit"]:hover {
+    border: 1px solid #8db94a;
+    background: #8db94a;
+}
+
+.mc-field-group {
+    display: inline-block;
+    margin: 1vh 1vw 1vh 0;
+}
+
+.mc-submit {
+    display: inline-block;
+}

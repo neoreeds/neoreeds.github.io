@@ -57,6 +57,7 @@
     position: absolute;
     margin-top: 1vh!important;
     width: 10vw;
+    padding: 0 0.5vw!important;
 }
 
 a,
@@ -83,7 +84,7 @@ a:visited {
     }
     .mailchimp-form input,
     #mc_embed_signup input.email {
-        width: 80%;
+        width: 100%;
     }
     .mc-field-group {
         display: block;
@@ -97,7 +98,33 @@ a:visited {
     }
     #mc_embed_signup div.mce_inline_error {
         display: block;
-        width: auto;
-        left: 17%;
+        position: relative;
+        width: 100%;
+        margin: 1vh 0 0!important;
+        border: 1px solid transparent;
+    }
+}
+
+@media (min-width: 560px) and (max-width:768px) and (orientation: landscape) {
+    /* font adjustments for landscape mobile */
+    .mailchimp-form input,
+    #mc_embed_signup input.email {
+        font-size: 2.5vh;
+        font-weight: 300;
+        line-height: 5vh;
+    }
+    #mc_embed_signup .button {
+        font-size: 2.5vh;
+        font-weight: 500;
+        line-height: 5vh;
+    }
+    #mc_embed_signup div.mce_inline_error {
+        font-size: 2.5vh!important;
+        font-weight: 500!important;
+        line-height: 5vh!important;
+    }
+    #mce-error-response {
+        font-size: 2.4vh;
+        line-height: 3.5vh;
     }
 }

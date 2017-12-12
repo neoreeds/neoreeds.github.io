@@ -175,6 +175,33 @@ p {
     }
 }
 
+@media (min-width: 560px) and (max-width:768px) and (orientation: landscape) {
+    /* font adjustments for landscape mobile */
+    body {
+        font-size: 2.4vh;
+        line-height: 3.5vh;
+    }
+    .title {
+        line-height: 7vh;
+        font-size: 5vh;
+    }
+    .summary {
+        line-height: 6vh;
+        font-size: 4.2vh;
+    }
+    .highlight-block {
+        font-size: 4.2vh;
+        line-height: 5.5vh;
+    }
+    .contact-text {
+        line-height: 5vh;
+        font-size: 4.2vh;
+    }
+    .small-font {
+        font-size: 3.1vh;
+    }
+}
+
 
 /*
 @media (min-width:481px) and (max-width:960px) {

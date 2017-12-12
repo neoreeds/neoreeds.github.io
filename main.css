@@ -101,12 +101,14 @@ p {
         text-align: center;
     }
     .title {
+        min-height: 88px;
         height: 27.5vh;
         line-height: 5vh;
         margin: 0 10vw;
         font-size: 3vh;
     }
     .summary {
+        min-height: 159px;
         height: 49.7vh;
         line-height: 4vh;
         font-size: 2.2vh;
@@ -139,12 +141,14 @@ p {
     .highlight-block-container {
         display: flex;
         flex-direction: column;
+        min-height: 320px;
         height: 100vh;
         margin-top: 1.3vh;
     }
     .highlight-block {
         font-size: 2.2vh;
         line-height: 3.5vh;
+        min-height: 61px;
         height: 19vh;
         border: none;
         border-radius: 0;
@@ -158,6 +162,7 @@ p {
     .contact-text {
         background: url('assets/mobile/background_mobile-flou.svg') no-repeat bottom center;
         background-size: cover;
+        min-height: 224px;
         height: 70vh;
         padding: 10vh 10vw;
         line-height: 4vh;
@@ -169,6 +174,7 @@ p {
     .arrow-bottom {
         background: url('assets/mobile/fleche-bas.svg') no-repeat bottom center;
         background-size: 5vh 5vh;
+        min-height: 16px;
         height: 5vh;
         width: 10vw;
         margin: 0 45vw;

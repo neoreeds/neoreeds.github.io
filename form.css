@@ -85,16 +85,26 @@ a:visited {
     .mailchimp-form input,
     #mc_embed_signup input.email {
         width: 100%;
+        padding: 0 1vw;
+        font-size: 2.5vh;
+        font-weight: 300;
+        line-height: 5vh;
     }
     .mc-field-group {
         display: block;
         margin: 1vh 0 1vh 0;
         width: 100%;
     }
-    .mc-submit {
+    #mc_embed_signup .mc-submit {
         display: block;
         margin: 1vh 0 1vh 0;
         width: 100%;
+        font-size: 2.5vh!important;
+        font-weight: 300;
+        line-height: 5vh;
+    }
+    #mc_embed_signup .mc-submit .button {
+        font-size: 2vh!important;
     }
     #mc_embed_signup div.mce_inline_error {
         display: block;
@@ -102,6 +112,10 @@ a:visited {
         width: 100%;
         margin: 1vh 0 0!important;
         border: 1px solid transparent;
+        padding: 1vh 1vw!important;
+        font-size: 2.5vh!important;
+        font-weight: 300;
+        line-height: 5vh;
     }
 }
 
